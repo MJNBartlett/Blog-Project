@@ -1,0 +1,60 @@
+/* Global colour references including root colour scheme */
+@import "colour-ref.css";
+/* Nav menu specific CSS */
+@import "nav-menu.css";
+/* Footer specific CSS */
+@import "footer.css";
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 400px;
+}
+h1, h2, h3{
+	margin: 0;
+	padding: 0;
+	color: inherit;
+}
+.box-shadow{
+	box-shadow: 0 0 60px -15px rgba(0,0,0,0.20);
+}
+.round25{
+	border-radius: 25px;
+}
+.round30{
+	border-radius: 30px;
+}
+.title-box{
+	height: 200px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.title-text{
+	font-family: Gloria Hallelujah, -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 2.2em;
+	font-weight: 800;
+	padding: 0 30px;
+	line-height: 1.5em;
+}
+.section-title{
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.section-sub-title{
+	font-size: 1.3em;
+	font-weight: 300;
+	margin-top: 18px;
+}
+.section-text{
+	font-size: 16px;
+	line-height: 1.5em;
+}
+.text-indent{
+	padding: 0 30px;
+}

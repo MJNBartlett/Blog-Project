@@ -1,0 +1,137 @@
+/* Menu colour kept outside of global colour-ref to maintain page-conditional highlighting */
+#menu-blog{
+	color: var(--nav-text-hover);
+}
+.blog-box{
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	border-radius: 0;
+	transition: 0.30s;
+}
+#article-nav{
+	grid-area: nav;
+}
+#content-grid{
+	grid-area: cont;
+}
+.blog-grid{
+	display: grid;
+	grid-template-areas:
+	"nav cont cont";
+	transition: 0.30s;
+}
+.article-nav{
+	min-width: 220px;
+	padding: 30px 30px 0 35px;
+	transition: 0.30s;
+}
+.article-nav-list{
+	display: flex;
+	list-style: none;
+	flex-flow: column wrap;
+	line-height: 2em;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-left: 0;
+	padding-bottom: 15px;
+}
+.article-nav-list a{
+	text-decoration: none;
+}
+.sub-menu-header{
+	font-size: 1.4em;
+}
+.content-grid{
+	display: grid;
+	grid-template-areas:
+	"text"
+	"card";
+	padding-top: 30px;
+	transition: 0.30s;
+}
+#blog-intro-header{
+	grid-area: text;
+}
+#article-container{
+	grid-area: card;
+}
+.article-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin: 30px 0;
+}
+.article-box{
+	height: 300px;
+	width: 300px;
+	margin: 25px 0;
+	overflow: hidden;
+}
+.article-box a{
+	text-decoration: none;
+}
+.article-box:hover{
+	box-shadow: 0 0 50px -10px rgba(0,0,0,0.35);
+	transition: 0.40s;
+}
+.article-box-image{
+	height: 70%;
+}
+#article-image-1{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: 0 30%;
+}
+#article-image-2{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.article-box-text{
+	height: 30%;
+}
+.article-box-h2{
+	padding-left: 30px;
+	padding-top: 15px;
+	font-weight: 600;
+}
+.article-box-h3{
+	padding-left: 30px;
+	padding-top: 5px;
+	font-weight: 300;
+}
+@media screen and (max-width: 900px){
+	.blog-grid{
+		grid-template-areas:
+		"cont"
+		"nav"
+		;
+	}
+	.article-box{
+		width: calc(100vw - 60px);
+		max-width: 100%;
+		min-width: 300px;
+	}
+}
+@media screen and (min-width: 1100px){
+	.blog-box{
+		transition: 0.30s;
+		box-shadow: none;
+	}
+	.blog-grid{
+		grid-gap: 10px;
+	}
+	.article-nav{
+		border-radius: 30px;
+		transition: 0.30s;
+	}
+	.content-grid{
+		border-radius: 30px;
+		box-shadow: 0 0 60px -15px rgba(0,0,0,0.20);
+		transition: 0.30s;
+		margin-left: 0;
+	}
+}

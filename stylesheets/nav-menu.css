@@ -1,0 +1,25 @@
+/* Behaviour for hover highlighting controlled in color-ref.css */
+/* Behaviour for preselected highlighting controlled in individual page CSS */
+.nav-menu{
+	height: 70px;
+}
+.menu-list{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40vw;
+	min-width: 300px;
+	max-width: 500px;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+}
+.menu-items{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.menu-items a{
+	color: inherit;
+	text-decoration: none;
+}

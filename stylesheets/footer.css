@@ -1,0 +1,43 @@
+:root{
+	--share-icon-dim: 50px;
+}
+.footer-box{
+	min-height: 150px;
+}
+.footer-text{
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 30px;
+}
+.footer-icon-flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	width: 40%;
+	min-width: 200px;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 50px;
+}
+.twitter-icon-box, .facebook-icon-box, .linkedin-icon-box{
+	height: var(--share-icon-dim);
+	border-radius: 9px;
+	overflow: hidden;
+}
+.twitter-svg{
+	height: var(--share-icon-dim);
+	width: var(--share-icon-dim);
+	stroke-linejoin: round;
+	stroke-miterlimit: 2;
+}
+.facebook-svg{
+	height: var(--share-icon-dim);
+	width: var(--share-icon-dim);
+}
+.linkedin-svg{
+	height: var(--share-icon-dim);
+	width: var(--share-icon-dim);
+	stroke-linejoin: round;
+	stroke-miterlimit: 2;
+}

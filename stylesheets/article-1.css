@@ -1,0 +1,18 @@
+.image-gallery{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 30px;
+}
+#image-1{
+	width: 100%;
+}
+#image-2, #image-3{
+	width: 50%;
+}
+@media screen and (max-width: 600px){
+	#image-2, #image-3{
+		width: 100%;
+	}
+}

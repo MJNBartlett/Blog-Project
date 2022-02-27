@@ -1,0 +1,107 @@
+/* Menu bar conditional highlighting maintained on page specific CSS */
+/* Global references*/
+:root{
+	--nav-bgcol:#181830;
+	--nav-text:#c5c5cc;
+	--nav-text-hover:#fefefd;
+	--section-bgcol:#fff;
+	--section-text:#000;
+	--section-title:#181830;
+	--section-sub-title:#5f5f7a;
+	--title-text:#181830;
+	--bg-col:#f6f6fa;
+}
+body{
+	background: var(--bg-col);
+}
+.nav-menu{
+	background: var(--nav-bgcol);
+}
+.menu-list{
+	color: var(--nav-text);
+}
+.menu-items:hover a{
+	color: var(--nav-text-hover);
+}
+.title-text{
+	color: var(--title-text);
+}
+.section-sub-title{
+	color: var(--section-sub-title);
+}
+.intro-box{
+	background: var(--section-bgcol);
+}
+.content-grid{
+	background: var(--section-bgcol);
+}
+.hashtags{
+	color: var(--section-sub-title);
+}
+/* Footer specific*/
+#twitter-bg{
+	fill: var(--nav-bgcol);
+}
+#twitter-inner{
+	fill: var(--section-bgcol);
+}
+#facebook-bg{
+	fill: var(--nav-bgcol);
+}
+#facebook-inner{
+	fill: var(--section-bgcol);
+}
+#linkedin-bg{
+	fill: var(--nav-bgcol);
+}
+#linkedin-inner{
+	fill: var(--section-bgcol);
+}
+.footer-text{
+	color: var(--title-text);
+}
+/* Blog page specific*/
+.article-nav{
+	background: var(--nav-bgcol);
+}
+.article-nav-list a{
+	color: var(--nav-text);
+}
+.article-nav-list a:hover{
+	color: var(--nav-text-hover);
+}
+.sub-menu-header{
+	color: var(--nav-text-hover);
+}
+.article-box-h2{
+	color: var(--section-title);
+}
+.article-box-h3{
+	color: var(--section-sub-title);
+}
+/* Subscribe page specific*/
+.subscribe-box{
+	background: var(--section-bgcol);
+}
+.subscribe-grid-form{
+	background: var(--nav-bgcol);
+}
+.subscribe-grid-form .section-title{
+	color: var(--nav-text-hover);
+}
+.subscribe-grid-form .section-sub-title{
+	color: var(--nav-text);
+}
+form{
+	color: var(--nav-text);
+}
+form li:focus-within{
+	color: var(--nav-text-hover);
+}
+.submit-button{
+	background: var(--nav-text);
+	color: var(--title-text);
+}
+.submit-button:hover, .submit-button:focus{
+	background: var(--section-bgcol);
+}

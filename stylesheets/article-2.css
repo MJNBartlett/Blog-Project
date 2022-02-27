@@ -1,0 +1,19 @@
+.image-gallery{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 30px;
+}
+#image-2, #image-3{
+	width: 50%;
+}
+#image-3{
+	object-fit: cover;
+	object-position: 80% 0;
+}
+@media screen and (max-width: 600px){
+	#image-2, #image-3{
+		width: 100%;
+	}
+}

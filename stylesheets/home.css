@@ -1,0 +1,81 @@
+/* Menu colour kept outside of global colour-ref to maintain page-conditional highlighting */
+#menu-home{
+	color: var(--nav-text-hover);
+}
+.intro-box{
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	border-radius: 0;
+	transition: 0.30s;
+}
+.intro-grid{
+	padding-top: 20px;
+	display: grid;
+	grid-template-areas:
+	"h h h"
+	"p1 p1 t1"
+	"t2 p2 p2";
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.intro-grid-img{
+	overflow: hidden;
+	height: 400px;
+	margin: 0 30px;
+	min-width: 340px;
+}
+.rasket-image{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: 0 40%;
+}
+.harrie-image{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: 0 80%;
+}
+.intro-grid-box{
+	min-height: 250px;
+	margin-bottom: 50px;
+}
+#intro-grid-header{
+	grid-area: h;
+	border-radius: 25px;
+	box-shadow: inset 0 0 25px 0 rgba(0,0,0,0.07);
+	padding: 30px 10px 20px 10px;
+	margin: 30px;
+}
+#intro-grid-pic1{
+	grid-area: p1;
+}
+#intro-grid-text1{
+	grid-area: t1;
+}
+#intro-grid-pic2{
+	grid-area: p2;
+}
+#intro-grid-text2{
+	grid-area: t2;
+}
+@media screen and (max-width: 900px){
+	.intro-grid{
+		grid-template-areas:
+		"h"
+		"p1"
+		"t1"
+		"p2"
+		"t2";
+		transition: 0.30s;
+	}
+}
+@media screen and (min-width: 1100px){
+	.intro-box{
+		border-radius: 30px;
+		transition: 0.30s;
+	}
+}
