@@ -79,6 +79,9 @@ body{
 .article-box-h3{
 	color: var(--section-sub-title);
 }
+figcaption{
+	color: var(--nav-text-hover);
+}
 /* Subscribe page specific*/
 .subscribe-box{
 	background: var(--section-bgcol);

@@ -103,6 +103,47 @@
 	padding-top: 5px;
 	font-weight: 300;
 }
+.author-grid{
+	display: grid;
+	grid-template-areas:
+	"auth pic";
+}
+.author-image{
+	grid-area: pic;
+	margin-top: 20px;
+	margin-left: auto;
+	padding-right: 25px;
+}
+.author-image img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100px;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.author-box{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	grid-area: auth;
+	width: 5fr;
+}
+.author-title{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.author-list{
+	list-style: none;
+	padding-left: 30px;
+	line-height: 1.5em;
+}
+.author-box a{
+	text-decoration: none;
+	color: inherit;
+	font-style: italic;
+}
+.author-box a:hover{
+	text-decoration: underline;
+}
 @media screen and (max-width: 900px){
 	.blog-grid{
 		grid-template-areas:

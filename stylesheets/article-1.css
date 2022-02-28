@@ -1,3 +1,17 @@
+figure{
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin-bottom: -3px;
+}
+figcaption{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 10px;
+	font-size: 14px;
+}
 .image-gallery{
 	display: flex;
 	flex-flow: row wrap;
